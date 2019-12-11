@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="showM()"> Click me1! </button>
+    <script>
+        function showM(){
+            alert('Xin chào 1!');
+        }
+    </script>
+    <div id="messageDiv"></div>
+    <button type="button" onclick="showM2();">Click Me2!</button>
+    <script>
+     function showM2(){
+         document.getElementById('messageDiv').innerHTML = 'Xin chào 2!';
+     }
+    </script>
+    </br>
+    <button type="button" onclick="showM3();">Click Me3!</button>
+    <script>
+     function showM3(){
+         document.write('Xin chào 3!');
+     }
+    </script>
+    </br>
+    <button type="button" onclick="showM4();">Click Me4!</button>
+    <script>
+     function showM4(){
+         console.log('Xin chào 4!');
+     }
+    </script>
+</body>
+</html>
